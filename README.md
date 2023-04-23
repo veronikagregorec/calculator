@@ -2,7 +2,7 @@
 
 Project for IP21 academy.
 
-<a href="https://veronikagregorec.github.io/calculator">Live Version</a>
+<a href="https://veronikagregorec.github.io/calculator">Live Preview</a>
 
 ## Browser Compatibility
 
