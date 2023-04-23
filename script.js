@@ -7,9 +7,6 @@ buttons.map((button) => {
       case "C":
         result.innerHTML = "";
         break;
-      case "π":
-        result.innerHTML += 3.14;
-        break;
       case "=":
         try {
           result.innerHTML = eval(result.innerHTML);
