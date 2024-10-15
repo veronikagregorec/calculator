@@ -1,0 +1,128 @@
+:root{
+    --white: #fff;
+    --darkPink: #cc00c2;
+    --pink: #ff5ef7;
+    --lightPink: #ffe6fd;
+    --greenBlue: #00dee6;
+    --skyBlue: #02f5ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection{
+    background-color: var(--darkPink);
+    color: var(--white);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background-image: linear-gradient(90deg, var(--pink) 17.8%, var(--skyBlue) 100.2%);
+}
+
+.container{
+    border: 1px solid var(--darkPink);
+    padding: 20px;
+    background-color: var(--darkPink);
+    border-radius: 5px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    grid-gap: 5px;
+    margin-top: 30px;
+}
+
+.functions{
+    background-color: var(--lightPink);
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: 500;
+    border: 1px solid var(--darkPink);
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+#equal{
+    display: grid;
+    place-items: center;
+    grid-column: 3 / span 2;
+    width: 145px;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: var(--greenBlue);
+    border: 1px solid var(--white);
+    transition: all 0.25s ease-in;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+#multiply{
+    font-size: 35px;
+    line-height: 2.3;
+}
+
+#result{
+    text-align: end;
+    border: 1px solid transparent;
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    margin: 5px 0;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    background-color: var(--white);
+}
+
+@media(max-width: 360px){
+    body {
+        margin-top: 20%;
+    }
+
+    .container {
+        width: 270px;
+    }
+
+    #equal {
+        width: 115px;
+    }
+
+    button {
+        width: 55px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    #multiply {
+        font-size: 20px;
+    }
+    
+    #result {
+        width: 235px;
+        height: 70px;
+        font-size: 35px;
+    }
+}
